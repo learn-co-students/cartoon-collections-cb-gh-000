@@ -18,10 +18,9 @@ def long_planeteer_calls(arr)
 end
 
 def find_the_cheese(arr)
-  new_arr = []
+
   types = ["cheddar", "gouda", "camembert"]
-  arr.each { |item|
-    new_arr << item if types.include?(item)
+  arr.find { |item|
+    types.include?(item)
   }
-  new_arr.join("") == "" ? nil : new_arr.join("")
 end
