@@ -14,10 +14,7 @@ def find_the_cheese(col)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
 
-  cheese_types.each do |e|
-    if col.include?(e)
-      return e
-    end
+  cheese_types.find do |e|
+    col.include?(e)
   end
-  nil
 end
